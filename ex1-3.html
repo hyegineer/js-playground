@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>섭씨를 입력받아서 화씨로 바꿔봅시다.</h1>
+
+    <p>변환한 화씨는 <span id="fahrenheit"></span>입니다.</p>
+
+    <script>
+      var celsius = prompt("섭씨를 입력해주세요.");
+
+      var celsiusToFahrenheit = (celsius * 9) / 5 + 32;
+
+      document.querySelector("#fahrenheit").innerHTML = celsiusToFahrenheit;
+    </script>
+
+    <!-- <script>
+      //32f = 0c, 212f = 100c
+      var s1 = prompt("화씨온도를 입력해 주세요.(F)");
+      var f = Number(s1);
+      var c = ((f - 32) * 5) / 9;
+      document.write("화씨" + f + "도는 섭씨 " + c + "도입니다.");
+    </script> -->
+  </body>
+</html>

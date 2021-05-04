@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>두 수를 입력받아 4칙연산의 결과를 표시</h1>
+
+    <p>두 수의 합은 <span id="sum"></span></p>
+    <p>두 수의 차는 <span id="substract"></span></p>
+    <p>두 수의 곱은 <span id="multiply"></span></p>
+    <p>두 수의 나누기는 <span id="divide"></span></p>
+
+    <div>
+        - 문자열은 + 연결연산자 뺴고는 다 숫자형 변환이 된다.<br>
+        - parseInt(num)과 Number(num)의 동작은 다르다. <br>
+        - 단순 문자열 -> 숫자열 변경은 Number(num)이 적합하다. parseInt는 소수점 뒤를 지워줌
+    </div>
+
+    <script>
+      var a = prompt('첫번째 수를 입력하세요');
+      var b = prompt('두번째 수를 입력하세요');
+
+    //   var sum = parseInt(a) + parseInt(b); // 연결연산자
+      var sum = Number(a) + Number(b); // 연결연산자
+      var substract = a - b;
+      var multiply = a * b;
+      var divide = a / b;
+
+      document.querySelector('#sum').innerHTML = sum;
+      document.querySelector('#substract').innerHTML = substract;
+      document.querySelector('#multiply').innerHTML = multiply;
+      document.querySelector('#divide').innerHTML = divide;
+    </script>
+  </body>
+</html>

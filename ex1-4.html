@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>입력한 문자열의 길이를 맞춰봅시다</h1>
+
+    <p>입력한 문자열의 길이는 <span id="textLength"></span>입니다.</p>
+
+    <script>
+      var text = prompt("문자열을 입력해주세요.");
+
+      document.querySelector("#textLength").innerHTML = text.length;
+    </script>
+
+    <!-- <script>
+      var s1 = prompt("아무 말이나 넣어 주세요.");
+      var len = s1.length;
+
+      document.write(s1 + "의 길이는 " + len + "입니다.");
+    </script> -->
+  </body>
+</html>

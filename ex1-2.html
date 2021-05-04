@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>bmi 계산식</h1>
+
+    <p>당신의 bmi는 <span id="bmi"></span>입니다.</p>
+
+    <!-- <script>
+      var cm = prompt("키를 입력해주세요.");
+      var kg = prompt("몸무게를 입력해주세요.");
+
+      var bmi = kg / (centimeterToMeter(cm) * centimeterToMeter(cm));
+
+      function centimeterToMeter(num) {
+        return (num * 0.01).toFixed(2);
+      }
+
+      console.log(centimeterToMeter(171));
+
+      document.querySelector("#bmi").innerHTML = bmi.toFixed(2);
+    </script> -->
+
+    <script>
+      var s1 = prompt("키을 입력해 주세요. (cm)");
+      var s2 = prompt("체중을 입력해 주세요.(Kg)");
+      var height = Number(s1) / 100;
+      var weight = Number(s2);
+      var bmi = weight / (height * height);
+      document.write("BMI는 " + bmi + "입니다.");
+    </script>
+  </body>
+</html>
